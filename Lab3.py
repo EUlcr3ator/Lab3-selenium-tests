@@ -102,5 +102,5 @@ def test_navigate_to_my_info():
 
 if __name__ == "__main__":
     test_successful_login()
-    #test_invalid_login()
-    #test_navigate_to_my_info()
+    test_invalid_login()
+    test_navigate_to_my_info()
