@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 
 def test_successful_login():
 
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(service=ChromeService())
     driver.maximize_window()
 
 
