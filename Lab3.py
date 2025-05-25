@@ -35,8 +35,7 @@ def test_successful_login():
 
 
 def test_invalid_login():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.maximize_window()
+    driver = webdriver.Chrome(service=ChromeService())
     driver.get("https://opensource-demo.orangehrmlive.com/")
 
     try:
@@ -64,8 +63,7 @@ def test_invalid_login():
         driver.quit()
 
 def test_navigate_to_my_info():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    driver.maximize_window()
+    driver = webdriver.Chrome(service=ChromeService())
     driver.get("https://opensource-demo.orangehrmlive.com/")
 
     try:
